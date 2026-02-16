@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Cabs</title>
+    
+    <!-- CSS File Link - Yeh line add karo -->
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-taxi"></i>
+                    <span>Premium Cabs</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#fleet">Our Fleet</a></li>
+                    <li><a href="#rates">Rates</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <a href="tel:+1234567890" class="btn-call">
+                        <i class="fas fa-phone"></i> Call Now
+                    </a>
+                    <button class="menu-toggle" id="menuToggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Your Trusted Cab Service</h1>
+                <p class="hero-subtitle">Safe, Comfortable & Reliable Rides for Every Journey</p>
+                <div class="booking-form-card">
+                    <h3>Book Your Ride</h3>
+                    <form id="bookingForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-map-marker-alt"></i> Pickup Location</label>
+                                <input type="text" placeholder="Enter pickup location" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-map-marker-alt"></i> Drop Location</label>
+                                <input type="text" placeholder="Enter drop location" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-calendar"></i> Pickup Date</label>
+                                <input type="date" required>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-clock"></i> Pickup Time</label>
+                                <input type="time" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label><i class="fas fa-car"></i> Vehicle Type</label>
+                                <select required>
+                                    <option value="">Select vehicle</option>
+                                    <option value="sedan">Sedan</option>
+                                    <option value="suv">SUV</option>
+                                    <option value="tempo">Tempo Traveller</option>
+                                    <option value="luxury">Luxury Car</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label><i class="fas fa-phone"></i> Phone Number</label>
+                                <input type="tel" placeholder="Enter phone number" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn-primary">
+                            <i class="fas fa-search"></i> Check Availability
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Safe & Secure</h3>
+                    <p>Verified drivers and GPS tracking for your safety</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Service</h3>
+                    <p>Available round the clock for your convenience</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3>Best Prices</h3>
+                    <p>Competitive rates with no hidden charges</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Professional Drivers</h3>
+                    <p>Experienced and courteous chauffeurs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive cab solutions for all your travel needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-city"></i>
+                    </div>
+                    <h3>Local Rides</h3>
+                    <p>Quick and convenient rides within the city for your daily commute</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-road"></i>
+                    </div>
+                    <h3>Outstation Trips</h3>
+                    <p>Comfortable long-distance travel to your destination</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-plane"></i>
+                    </div>
+                    <h3>Airport Transfer</h3>
+                    <p>Timely pickup and drop services for all airports</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <h3>Hourly Rental</h3>
+                    <p>Flexible hourly packages for multiple stops</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Corporate Services</h3>
+                    <p>Professional transport solutions for businesses</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card">
+                    <div class="service-image">
+                        <i class="fas fa-ring"></i>
+                    </div>
+                    <h3>Wedding Events</h3>
+                    <p>Luxury cars for your special occasions</p>
+                    <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fleet Section -->
+    <section id="fleet" class="fleet">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fleet</h2>
+                <p>Choose from our wide range of well-maintained vehicles</p>
+            </div>
+            <div class="fleet-grid">
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h3>Sedan</h3>
+                    <p class="capacity"><i class="fas fa-users"></i> 4 Passengers</p>
+                    <ul class="fleet-features">
+                        <li><i class="fas fa-check"></i> AC</li>
+                        <li><i class="fas fa-check"></i> Comfortable</li>
+                        <li><i class="fas fa-check"></i> Fuel Efficient</li>
+                    </ul>
+                    <p class="fleet-price">Starting from ₹12/km</p>
+                    <a href="#contact" class="btn-secondary">Book Now</a>
+                </div>
+                <div class="fleet-card featured">
+                    <div class="popular-badge">Popular</div>
+                    <div class="fleet-image">
+                        <i class="fas fa-car-side"></i>
+                    </div>
+                    <h3>SUV</h3>
+                    <p class="capacity"><i class="fas fa-users"></i> 6-7 Passengers</p>
+                    <ul class="fleet-features">
+                        <li><i class="fas fa-check"></i> Spacious</li>
+                        <li><i class="fas fa-check"></i> Luggage Space</li>
+                        <li><i class="fas fa-check"></i> Premium Comfort</li>
+                    </ul>
+                    <p class="fleet-price">Starting from ₹18/km</p>
+                    <a href="#contact" class="btn-secondary">Book Now</a>
+                </div>
+                <div class="fleet-card">
+                    <div class="fleet-image">
+                        <i class="fas fa-bus"></i>
+                    </div>
+                    <h3>Tempo Traveller</h3>
+                    <p class="capacity"><i class="fas fa-users"></i> 12-17 Passengers</p>
+                    <ul class="fleet-features">
+                        <li><i class="fas fa-check"></i> Group Travel</li>
+                        <li><i class="fas fa-check"></i> Push Back Seats</li>
+                        <li><i class="fas fa-check"></i> AC</li>
+                    </ul>
+                    <p class="fleet-price">Starting from ₹25/km</p>
+                    <a href="#contact" class="btn-secondary">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rates Section -->
+    <section id="rates" class="rates">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Rates</h2>
+                <p>Transparent pricing with no hidden charges</p>
+            </div>
+            <div class="rates-grid">
+                <div class="rate-card">
+                    <h3>Local Packages</h3>
+                    <div class="rate-item">
+                        <span>4 Hours / 40 km</span>
+                        <span class="price">₹1,200</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>8 Hours / 80 km</span>
+                        <span class="price">₹2,200</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>12 Hours / 120 km</span>
+                        <span class="price">₹3,000</span>
+                    </div>
+                </div>
+                <div class="rate-card highlight">
+                    <div class="best-value">Best Value</div>
+                    <h3>Outstation Packages</h3>
+                    <div class="rate-item">
+                        <span>One Way Trip</span>
+                        <span class="price">₹12/km</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>Round Trip</span>
+                        <span class="price">₹11/km</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>Multi-City Tour</span>
+                        <span class="price">Custom Quote</span>
+                    </div>
+                </div>
+                <div class="rate-card">
+                    <h3>Airport Transfer</h3>
+                    <div class="rate-item">
+                        <span>Airport Pickup</span>
+                        <span class="price">₹800</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>Airport Drop</span>
+                        <span class="price">₹800</span>
+                    </div>
+                    <div class="rate-item">
+                        <span>Round Trip</span>
+                        <span class="price">₹1,500</span>
+                    </div>
+                </div>
+            </div>
+            <p class="rate-note">*Rates may vary based on vehicle type and season. Contact us for accurate quotes.</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Us</h2>
+                    <p>With over 10 years of experience in the transportation industry, we have established ourselves as a trusted name in cab services. Our commitment to excellence, safety, and customer satisfaction sets us apart.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <h3>10,000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Vehicles</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>24/7</h3>
+                            <p>Support</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>100%</h3>
+                            <p>Satisfaction</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <i class="fas fa-taxi"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Excellent service! The driver was professional and the car was clean. Highly recommended for outstation trips."</p>
+                    <div class="testimonial-author">
+                        <strong>Rajesh Kumar</strong>
+                        <span>Business Traveler</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Booked for my wedding. The luxury cars were in perfect condition and added elegance to our special day."</p>
+                    <div class="testimonial-author">
+                        <strong>Priya Sharma</strong>
+                        <span>Wedding Event</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>"Always on time for airport transfers. Very reliable service with fair pricing. My go-to cab service."</p>
+                    <div class="testimonial-author">
+                        <strong>Amit Patel</strong>
+                        <span>Frequent Flyer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Us</h2>
+                <p>Get in touch for bookings and inquiries</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 98765 43210</p>
+                            <p>+91 98765 43211</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@premiumcabs.com</p>
+                            <p>booking@premiumcabs.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>123 Main Street, City Center</p>
+                            <p>Your City, State 123456</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>24/7 Available</p>
+                            <p>All Days of the Week</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Service</option>
+                                <option value="local">Local Ride</option>
+                                <option value="outstation">Outstation Trip</option>
+                                <option value="airport">Airport Transfer</option>
+                                <option value="hourly">Hourly Rental</option>
+                                <option value="corporate">Corporate Service</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="4" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Premium Cabs</h3>
+                    <p>Your trusted partner for safe and comfortable rides. Available 24/7 for all your transportation needs.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#fleet">Our Fleet</a></li>
+                        <li><a href="#rates">Rates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Local Rides</a></li>
+                        <li><a href="#services">Outstation Trips</a></li>
+                        <li><a href="#services">Airport Transfer</a></li>
+                        <li><a href="#services">Hourly Rental</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+                        <li><i class="fas fa-envelope"></i> info@premiumcabs.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Your City, State</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Cabs. All rights reserved. | Designed with <i class="fas fa-heart"></i></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
